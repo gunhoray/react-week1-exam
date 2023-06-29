@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# [React week1 exam](https://react-week1-exam.vercel.app/)
+### by gunhoray using javascript, react, html, css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2023-06-29 at 10 06 24 AM](https://github.com/gunhoray/react-week1-exam/assets/88648468/0b996d34-9694-4b1e-ba72-776f3d2d6b94)
 
-## Available Scripts
 
-In the project directory, you can run:
+## assingments of this project 
+* useState와 이벤트 핸들러를 이용해서 프로젝트를 완성
 
-### `yarn start`
+## functions of this project 
+* - App.js와 App.css 만 사용해서 코드와 스타일 코드를 작성
+* - input에 제목을 쓰고, [추가하기] 버튼을 클릭하면 todo가 추가되어 화면에 렌더링
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## blueprint of the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* App.jsx
+  * function App
+     * states : item
+       
+     * input states : title(for receiving changes in title input)
+   
+     * titleHandler : storing (event.target.value) in title through setTitle taking (event) as parameter
+   
+     * addbtnHandler : click action to add newpost (data from title input)
+        * verify if user is adding empty data
+        * if not, give 'id' by adding 1 to item.id & 'title' 
+        * store newItem to item by setItem
+        * than, empty setTitle input
+          
+  * Return
+     * input : TITLE 
+     * button : 추가하기
+     * h1 : MY TO-DO LIST
+     * div 'item-Box'
+        * posts.map : to show user's items those were produced 
 
-### `yarn test`
+* App.css
+  * centered : to make whole section centered
+  * whole-Box : contain whole elements
+  * input-Box : contain input and a button
+  * title-Box : "Todo List"
+  * item-Box : contains produced items
+  * item-style : style of items
+  * item-title : styling content of the item
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Difficulties encountered during this project
+* While constructing CSS had to find word-wrap to make content fit into the item ⭐️
